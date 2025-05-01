@@ -48,7 +48,7 @@ export function makeMetricTimeSeriesParams(
   if (measure?.type === MeasuresTypesEnum.MEASURES) {
     expression.unshift({
       key: 'what',
-      value: measure,
+      value: measure.value,
       type: 'property',
       isExact: true,
     });
